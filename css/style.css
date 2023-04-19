@@ -93,8 +93,18 @@ body {
     transition: .25s linear;
     position: relative;
 }
+.nav_item_link:hover {
+    color: #F5A425;
+}
 
-.nav_item_link::before {
+.line {
+    height: 2px;
+    background-color: #F5A425;
+    position: fixed;
+    transition: .25 linear;
+}
+
+/* .nav_item_link::before {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -105,13 +115,10 @@ body {
     transition: .25s linear;
 }
 
-.nav_item_link:hover {
-    color: #F5A425;
-}
 
 .nav_item_link:hover::before {
     transform: scale(1)
-}
+} */
 
 .overlay {
     position: absolute;
@@ -381,10 +388,6 @@ body {
     font-size: 18px;
     line-height: 32px;
     margin-block: 20px;
-}
-
-.my_project_content_body li {
-    /* font-weight: 200; */
 }
 
 .mp_btn {
