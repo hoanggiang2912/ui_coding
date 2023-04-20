@@ -1,0 +1,158 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    font-family: 'Nexa';
+    display: grid;
+    place-items: center;
+}
+.container{
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px; 
+}
+.left{
+    width: 55%;
+}
+.img_left{
+    width: 100%;
+    height: 100%;
+}
+.right{
+    width: 45%;
+    padding: 20px 50px;
+}
+.insta_form{
+    background: #FFFFFF;
+    box-shadow: 0px 21.0037px 31.5056px rgba(147, 153, 176, 0.15);
+    border-radius: 12.6022px;
+    padding: 30px;
+}
+.logo{
+    margin: 30px auto;
+}
+.form_input{
+    width: 100%;
+    height: 42px;
+    margin-top: 12px;
+    opacity: 0.1;   
+    border-radius: 6.30112px;
+    padding-inline: 10px;   
+    background-color: #C4C4C4;
+    border: transparent;
+}
+:placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.6022px;
+    line-height: 15px;
+    color: #5A686C;
+}
+.login_btn{
+    background: linear-gradient(269.53deg, #A336BD -4.74%, #FF387D 29.23%, #FF5D34 70.94%, #FFAA1B 105.94%);
+    border-radius: 6.30112px;
+    margin-top: 12px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14.7026px;
+}
+
+.or{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.5521px;
+    color: #5A686C;
+    margin-block: 18px;
+    text-align: center;
+    position: relative;
+}
+.or::before{
+    content:'';
+    position: absolute;
+    border: 1.05019px solid #EBEBEB;
+    width: 45%;
+    top: 50%;
+    left: 0%;
+}
+.or::after{
+    content:'';
+    position: absolute;
+    border: 1.05019px solid #EBEBEB;
+    width: 45%;
+    top: 50%;
+    right: 0%;
+}
+.facebook{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.6022px;
+    color: #1877F2;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1877F2;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.facebook img{
+    margin-inline: 8px;
+}
+.forgot{
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.6022px;
+    color: #5A686C;
+    margin-block: 12px;
+    text-align: center;
+}
+.social_btn button{
+    padding: 10px 40px;
+    border-radius: 5px;
+}
