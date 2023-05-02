@@ -1,0 +1,164 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+    background-color: whitesmoke;
+    font-family: 'FS PF BeauSans Pro';
+}
+#toast {
+    position: fixed;
+    top: 35px;
+    right: 35px;
+}
+@keyframes slideInToView {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 35px));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@keyframes slideToHide {
+    to { 
+        opacity: 0;
+        transform: translateX(calc(100% + 35px));   
+    }
+}
+.toast{
+    max-width: 600px;
+    min-width: 450px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-block: 20px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    z-index: 9999;
+    transition: .25s linear;
+}
+.toast::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+}
+.toast--success::before {
+    background-color: rgb(71, 215, 100);
+}
+.toast--info::before{
+    background-color: rgb(47, 134, 235);
+}
+.toast--warn::before{
+    background-color: rgb(255, 192, 33);
+}
+.toast--error::before{
+    background-color: rgb(240, 77, 98);
+}
+
+.toast--success .toast__icon {
+    color:rgb(71, 215, 100);
+}
+.toast--info .toast__icon {
+    color:rgb(47, 134, 235);
+}
+.toast--warn .toast__icon {
+    color:rgb(255, 192, 33);
+}
+.toast--error .toast__icon {
+    color: rgb(240, 77, 98);
+}
+.toast__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+.toast__title{
+    font-weight: 600;
+}
+.toast__message{
+    color: gray;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.toast__btn{
+    color: gray;
+    font-weight: 400;
+    font-size: 24px;
+    transition: .2s ease;
+    margin-left: 20px;
+}
+.toast__btn:hover{
+    color: black;
+}
+.btn {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    border-radius: 50px;
+    min-width: 100px;
+    padding: 10px 42px; 
+    margin-inline: 20px;
+    transition: .2s ease;
+    cursor: pointer;
+    user-select: none;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.btn--success {
+    background-color: rgb(71, 215, 100);
+}
+.btn--error {
+    background-color: rgb(240, 77, 98);
+}
