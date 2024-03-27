@@ -19,44 +19,44 @@ const app = {
     songs: [
         {
             name: 'Easy On Me',
-            img: '/music-player/assets/images/img1.jpg',
-            path: '/music-player/assets/musics/song1.mp3',
+            img: '../assets/images/img1.jpg',
+            path: '../assets/musics/song1.mp3',
             singer: 'Adele'
         },
         {
             name: 'Love In The Dark',
-            img: '/music-player/assets/images/img2.jpg',
-            path: '/music-player/assets/musics/song2.mp3',
+            img: '../assets/images/img2.jpg',
+            path: '../assets/musics/song2.mp3',
             singer: 'Adele'
         },
         {
             name: 'Send My Love',
-            img: '/music-player/assets/images/img3.jpg',
-            path: '/music-player/assets/musics/song3.mp3',
+            img: '../assets/images/img3.jpg',
+            path: '../assets/musics/song3.mp3',
             singer: 'Adele'
         },
         {
             name: 'Hello',
-            img: '/music-player/assets/images/img4.jpg',
-            path: '/music-player/assets/musics/song4.mp3',
+            img: '../assets/images/img4.jpg',
+            path: '../assets/musics/song4.mp3',
             singer: 'Adele'
         },
         {
             name: 'Shape Of You',
-            img: '/music-player/assets/images/img5.jpg',
-            path: '/music-player/assets/musics/song5.mp3',
+            img: '../assets/images/img5.jpg',
+            path: '../assets/musics/song5.mp3',
             singer: 'Ed Sheeran'
         },
         {
             name: 'Thinking Out Loud',
-            img: '/music-player/assets/images/img6.jpg',
-            path: '/music-player/assets/musics/song6.mp3',
+            img: '../assets/images/img6.jpg',
+            path: '../assets/musics/song6.mp3',
             singer: 'Ed Sheeran'
         },
         {
             name: 'Bad Habits',
-            img: '/music-player/assets/images/img7.jpg',
-            path: '/music-player/assets/musics/song7.mp3',
+            img: '../assets/images/img7.jpg',
+            path: '../assets/musics/song7.mp3',
             singer: 'Ed Sheeran'
         }
     ],
